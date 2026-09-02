@@ -1,0 +1,36 @@
+generated: '2026-09-01'
+method: probed
+source: https://ubiquitous.energy/.well-known/
+note: >-
+  Every named /.well-known/ path was probed on the company's only live host, ubiquitous.energy, on
+  2026-09-01. All five returned HTTP 404 with the site builder's 52KB HTML 404 page (Content-Type
+  text/html), so nothing was saved and NO WellKnown or SecurityTxt pointer is emitted in apis.yml —
+  this file records a verified absence, not a served surface. The site is a three-page GoDaddy
+  Website Builder property (/, /technology, /ols/products per its sitemap) with no developer,
+  API or /.well-known/ surface of any kind. The company's other registered domain,
+  ubiquitousenergy.com, no longer resolves to a company site: it serves a 114-byte lander that
+  hands off to forsale.godaddy.com, so it was not treated as a company-controlled host.
+hosts:
+- host: ubiquitous.energy
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null

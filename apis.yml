@@ -1,10 +1,21 @@
 aid: ubiquitous-energy
 name: Ubiquitous Energy
-description: 'Ubiquitous Energy is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Ubiquitous Energy is a Redwood City, California materials-science company and MIT spin-out that
+  develops UE Power (formerly ClearView Power), a transparent photovoltaic coating applied to glass.
+  The coating uses small-molecule organic semiconductor dyes to absorb ultraviolet and infrared light
+  while transmitting visible light, so a window generates electricity without a visible aesthetic
+  change and while retaining low-e thermal performance. The company designs, synthesizes and
+  characterizes novel organic semiconductor molecules, evaluates transparent photovoltaic devices
+  against industry test protocols, and sells technical consultation, R&D, design and engineering
+  services to glass and glass-coating manufacturers. Its product is a physical coating and a
+  licensing/engineering practice, not software; it publishes no developer program, API, SDK or
+  machine-readable contract of any kind.
+image: https://img1.wsimg.com/isteam/ip/ca3ad51e-0061-4455-a0dd-122ea9434150/UE_HorizontalLogo.png
 url: https://raw.githubusercontent.com/api-evangelist/ubiquitous-energy/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
+x-source-url: https://www.nasdaqprivatemarket.com/
 x-tier: stub
 x-tier-reason: harvest
 specificationVersion: '0.20'
@@ -12,6 +23,13 @@ created: '2026-09-01'
 modified: '2026-09-01'
 tags:
 - Company
+- Energy
+- Solar
+- Materials Science
+- Cleantech
+- Manufacturing
+- Building Technology
+- Research and Development
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +37,37 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ubiquitous-energy-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://ubiquitous.energy/
+- type: LLMsTxt
+  url: llms/ubiquitous-energy-llms.txt
+x-enrichment:
+  date: '2026-09-01'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Ubiquitous Energy sells a transparent photovoltaic coating for glass plus R&D and engineering
+    services to window manufacturers, and its entire web presence is a three-page GoDaddy Website
+    Builder site (/, /technology, an empty /ols/products) whose own sitemap lists no developer,
+    docs or API page — while its second domain, ubiquitousenergy.com, now serves a lander that
+    hands off to forsale.godaddy.com.
+  evidence:
+  - url: https://ubiquitous.energy/
+    status: 200
+  - url: https://ubiquitous.energy/sitemap.website.xml
+    status: 200
+  - url: https://ubiquitous.energy/openapi.json
+    status: 404
+  - url: https://ubiquitous.energy/.well-known/agent-card.json
+    status: 404
+  - url: https://ubiquitous.energy/docs
+    status: 404
+  - url: https://www.ubiquitousenergy.com/
+    status: 200
+  checked: '2026-09-01'
