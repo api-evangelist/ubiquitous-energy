@@ -11,6 +11,18 @@ description: >-
   services to glass and glass-coating manufacturers. Its product is a physical coating and a
   licensing/engineering practice, not software; it publishes no developer program, API, SDK or
   machine-readable contract of any kind.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://img1.wsimg.com/isteam/ip/ca3ad51e-0061-4455-a0dd-122ea9434150/UE_HorizontalLogo.png
 url: https://raw.githubusercontent.com/api-evangelist/ubiquitous-energy/refs/heads/main/apis.yml
 x-type: company
